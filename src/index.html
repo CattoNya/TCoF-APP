@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarot Cards of Fate</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="title">
+      <h1 class="title-text">TAROT CARDS OF FATE</h1>
+    </div>
+    <div class="start">
+      <button
+        onclick="location.href = 'page.html'"
+        class="start-button"
+        type="submit"
+      >
+        Start
+      </button>
+      <button class="rulesBtn">Rules</button>
+      <div class="window hidden">
+        <button class="close">&times;</button>
+        <h1 class="rules-title-text">Rules</h1>
+        <ul class="rules-text">
+          <li>
+            The game is 2 player based and consists of a total of 3 rounds.
+          </li>
+          <li>
+            Each round, both players have to pick one random card out of the 7
+            randomly generated.
+          </li>
+          <li>
+            If the card is in reversed position, minus the points on the card,
+            otherwise plus the points.
+          </li>
+          <li>
+            Throughout the rounds, each player will have a score, the winner
+            being decided by the higher absolute value of the their score.
+          </li>
+        </ul>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
